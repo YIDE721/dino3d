@@ -2302,7 +2302,7 @@ let load_manager = new LoadManager(); // start loading assets ASAP
 load_manager.set_loader('ground', [], function() {
   let parser = new vox.Parser();
 
-  parser.parse(config.base_path + 'objects/ground sand.vox').then(function(voxelData) {
+  parser.parse(config.base_path + 'objects/ground_sand.vox').then(function(voxelData) {
     let builder = new vox.MeshBuilder(voxelData, {voxelSize: .1});
     let material = new THREE.MeshLambertMaterial();
     material.map = vox.MeshBuilder.textureFactory.getTexture(voxelData);
@@ -2315,7 +2315,7 @@ load_manager.set_loader('ground', [], function() {
 load_manager.set_loader('ground_bg', [], function() {
   let parser = new vox.Parser();
 
-  parser.parse(config.base_path + 'objects/ground sand solid.vox').then(function(voxelData) {
+  parser.parse(config.base_path + 'objects/ground_sand_solid.vox').then(function(voxelData) {
     let builder = new vox.MeshBuilder(voxelData, {voxelSize: .1});
     let material = new THREE.MeshLambertMaterial();
     material.map = vox.MeshBuilder.textureFactory.getTexture(voxelData);
