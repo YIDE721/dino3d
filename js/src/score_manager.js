@@ -117,6 +117,8 @@ class ScoreManager {
         text = 'HI ' + Math.trunc(this.highest_score).pad(this.zero_padding);
       }
 
+      // text = 'Connect Wallet <br>' + text;
+
       if(this.is_flashing) {
         if(Math.trunc(this.clock.getElapsedTime() * 4) % 2) {
           text = text + ' ' +  Math.trunc(this.score).pad(this.zero_padding);
